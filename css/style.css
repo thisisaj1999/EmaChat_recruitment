@@ -6,15 +6,36 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 65.2%;
 }
 
 body {
   font-family: "Nunito", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+/*Typography*/
+.typo {
+  line-height: 2.3rem;
+  word-spacing: 1.5px;
+  letter-spacing: 0.5px;
 }
 
 /*Buttons*/
@@ -31,4 +52,68 @@ a {
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 1px 1px 8px 0 #4154f1;
+}
+
+.hero__heading {
+  color: var(--color-secondary);
+}
+
+.grid {
+  display: grid;
+  padding: 2.5rem;
+  gap: 1rem;
+}
+
+.grid--1x2 {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    padding: 3rem;
+  }
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*Hero*/
+
+.hero__image {
+  width: 100%;
+}
+
+.hero__heading {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__heading {
+    font-size: 3.3rem;
+    margin: 0;
+  }
+
+  .hero__body {
+    font-size: 1.8rem;
+    padding-left: 3rem;
+    line-height: 2.5rem;
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .hero__heading {
+    font-size: 4rem;
+  }
+  .hero__body {
+    line-height: 2.6rem;
+  }
 }
