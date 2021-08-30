@@ -5,6 +5,12 @@
   --color-white: #fff;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 65.2%;
 }
@@ -116,4 +122,72 @@ h3 {
   .hero__body {
     line-height: 2.6rem;
   }
+}
+
+/*Background*/
+.background {
+  display: flex;
+  position: relative;
+  height: 55vh;
+}
+
+.lower--layer {
+  clip-path: ellipse(77% 52% at 50% 26%);
+  height: 100%;
+  width: 100%;
+}
+
+.upper--layer {
+  clip-path: ellipse(73% 52% at 50% 29%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: black;
+  opacity: 0.2;
+}
+
+@media screen and (min-width: 480px) {
+  .background {
+    height: 66vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .background {
+    height: 100vh;
+  }
+
+  .lower--layer {
+    clip-path: ellipse(77% 52% at 50% 36%);
+  }
+
+  .upper--layer {
+    clip-path: ellipse(75% 52% at 50% 38%);
+  }
+}
+
+/*Logo*/
+.logo__background {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1.9px solid #fff;
+  box-shadow: 0 0 2px 2px #000;
+  opacity: 0.8;
+  margin: 2rem; /*Temp*/
+}
+
+.logo__background:hover {
+  background: #000;
+  opacity: 0.7;
+}
+
+.logo {
+  width: 3.5rem;
+  height: 3.5rem;
 }
