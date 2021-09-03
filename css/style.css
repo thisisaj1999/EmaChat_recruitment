@@ -93,7 +93,11 @@ h3 {
 .hero__heading {
   font-size: 2.8rem;
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 2.5rem;
+}
+
+.hero__body {
+  line-height: 3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -113,6 +117,10 @@ h3 {
     flex-direction: column;
     align-self: center;
   }
+
+  .picture--hero {
+    align-self: center;
+  }
 }
 
 @media screen and (min-width: 1140px) {
@@ -124,52 +132,10 @@ h3 {
   }
 }
 
-/*Background*/
-.background {
-  display: flex;
-  position: relative;
-  height: 55vh;
-}
-
-.lower--layer {
-  clip-path: ellipse(77% 52% at 50% 26%);
-  height: 100%;
-  width: 100%;
-}
-
-.upper--layer {
-  clip-path: ellipse(73% 52% at 50% 29%);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background: black;
-  opacity: 0.2;
-}
-
-@media screen and (min-width: 480px) {
-  .background {
-    height: 66vh;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .background {
-    height: 100vh;
-  }
-
-  .lower--layer {
-    clip-path: ellipse(77% 52% at 50% 36%);
-  }
-
-  .upper--layer {
-    clip-path: ellipse(75% 52% at 50% 38%);
-  }
-}
-
 /*Logo*/
 .logo__background {
-  width: 5rem;
-  height: 5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   cursor: pointer;
   background: #000;
   display: flex;
@@ -178,18 +144,41 @@ h3 {
   border-radius: 10px;
   border: 1.9px solid #fff;
   box-shadow: 0 0 2px 2px #000;
-  opacity: 0.8;
+  opacity: 0.9;
   margin: 2rem; /*Temp*/
 }
 
 .logo__background:hover {
   background: #000;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .logo {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .logo__background {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .logo {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .logo__background {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .logo {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
 
 /*card*/
@@ -346,4 +335,48 @@ h3 {
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
+}
+
+/*Blocks*/
+
+.hero--block .grid {
+  height: 100vh;
+}
+
+/*Background*/
+
+.background {
+  position: relative;
+}
+
+.background_pic {
+  width: 100%;
+  filter: brightness(0.5);
+}
+
+.logo__position {
+  position: absolute;
+  top: 0;
+}
+
+.background__content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 0;
+}
+
+.background__content_image {
+  border: 1px solid black;
+  width: 4rem;
+  height: 4rem;
+  align-self: center;
+  padding-left: 0.5rem;
+}
+
+.background__content_heading {
+  color: #fff;
+  font-size: 3rem;
+  position: relative;
 }
