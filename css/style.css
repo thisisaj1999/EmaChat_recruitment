@@ -184,22 +184,18 @@ h3 {
 /*card*/
 
 .card__main {
-  /*Temp*/
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
+  margin: 2rem;
 }
 
 .card {
-  width: 30rem;
+  width: 20rem;
+  height: 30rem;
   border-radius: 1rem;
   display: flex;
   border: 2px solid rgba(30, 144, 255, 0.3);
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 2rem;
 }
 
 .card:hover {
@@ -208,13 +204,16 @@ h3 {
 }
 
 .card__logo {
-  height: 20rem;
-  width: 20rem;
+  height: 12rem;
+  width: 12rem;
   justify-self: normal;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(211, 211, 211, 0.4);
 }
 
 .card__content {
   margin-top: 0;
+  padding: 0 1.2rem;
 }
 
 /*Media Objects*/
@@ -435,6 +434,7 @@ h3 {
 
 .aboutus_heading {
   text-align: center;
+  padding: 2rem;
   line-height: 3rem;
   color: var(--color-secondary);
 }
@@ -517,5 +517,26 @@ h3 {
 @media screen and (min-width: 1140px) {
   .main .collapsible {
     width: 60%;
+  }
+}
+
+/*Achievements*/
+
+.achievement {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.achievement .card__main {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .achievement {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
