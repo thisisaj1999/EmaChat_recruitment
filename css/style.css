@@ -382,6 +382,10 @@ h3 {
   background-attachment: fixed;
 }
 
+.back_content_footer {
+  background-image: url("/images/customer@3x.jpg");
+}
+
 .head {
   display: flex;
   flex-direction: column;
@@ -539,4 +543,27 @@ h3 {
     flex-direction: row;
     justify-content: space-evenly;
   }
+}
+
+/*Footer*/
+
+.footer_content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  line-height: 3.5rem;
+}
+
+.footer_content_heading {
+  margin-top: 0;
+  font-size: 4rem;
+}
+
+.footer_content_body {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: 0;
 }
