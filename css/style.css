@@ -16,9 +16,10 @@ html {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 a {
@@ -379,7 +380,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/images/handshake.jpg");
+  background-image: url('/images/handshake.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -387,7 +388,7 @@ h3 {
 }
 
 .back_content_footer {
-  background-image: url("/images/customer.jpg");
+  background-image: url('/images/customer.jpg');
 }
 
 .head {
@@ -429,7 +430,7 @@ h3 {
 }
 
 .bullet-content::before {
-  content: "\2022";
+  content: '\2022';
   padding-right: 1rem;
 }
 
